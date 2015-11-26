@@ -4,6 +4,7 @@
   "description": "Webpack Boiler Plate",
   "main": "app.js",
   "scripts": {
+    // this is a start script
     "start": "webpack-dev-server"
   },
   "author": "truckfondue",
