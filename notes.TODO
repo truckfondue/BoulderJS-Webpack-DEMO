@@ -1,0 +1,10 @@
+watch mode:
+  $ webpack --watch
+
+webpack-dev-server:
+  $ webpack-dev-server
+      http://localhost:8080/webpack-dev-server/
+        gives you hotcode reload albeit there will be some default styling at the top of the page
+  $ webpack-dev-server --inline
+      have your cake and eat it too.
+        removes default styling at the top of the page and still alots for hot code reload
