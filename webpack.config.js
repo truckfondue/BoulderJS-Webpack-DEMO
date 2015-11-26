@@ -8,7 +8,7 @@ module.exports = {
 		preloaders: [
 			{
 				test: /\.js$/,
-				exclude: 'node_modules',
+				exclude: /node_modules/,
 				loader: 'jshint-loader'
 			}
 		],
@@ -16,7 +16,7 @@ module.exports = {
 		loaders: [
 			{
 				test: /\.es6$/,
-				exclude: 'node_modules',
+				exclude: /node_modules/,
 				loader: 'babel-loader'
 			}
 		]
@@ -25,4 +25,4 @@ module.exports = {
 	resolve: {
 		extensions: ['', '.js', '.es6']
 	}
-}
+};
