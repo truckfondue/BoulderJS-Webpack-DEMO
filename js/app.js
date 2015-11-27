@@ -1,3 +1,3 @@
 console.log('app loaded');
 
-require('../css/app.css');
+require('../css/app.less');
