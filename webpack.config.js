@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
 	context: path.resolve('js'),
-	entry: ['./utils', './app'],
+	entry: './app',
 	output: {
 		path: path.resolve('build/js/'),
 		publicPath: '/public/assets/js/',
@@ -16,9 +16,9 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.es6$/,
+				test: /\.css$/,
 				exclude: /node_modules/,
-				loader: 'babel-loader'
+				loader: 'style-loader!css-loader'
 			}
 		]
 	},
